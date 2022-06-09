@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/1e37e18bf5.js" crossorigin="anonymous"></script>
+    <script src="dropdown.js"></script>
+</head>
+
+<body>
+    <div class="page-container">
+        <nav class="sidebar">
+            <div class="container">
+                <!--TOP LEFT PROFILE-->
+                <div class="top-container">
+                    <img src="img/Screen Shot 2022-06-09 at 16.03.32.png" alt="">
+                    <h1>Theo<br>Ang</h1>
+                </div>
+                <!--SIDEBAR MENU-->
+                <ul class="list" onmouseover="main()">
+                    <li class="list_item" onclick="scrollToSection('.hello-world')">
+                        <i class="fa-solid fa-user"></i>
+                        <h4>About</h4>
+                    </li>
+                    <li class="list_item" onclick="scrollToSection('.resume')">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <h4>Resume</h4>
+                    </li>
+                    <li class="list_item" onclick="scrollToSection('.works')">
+                        <i class="fa-solid fa-code"></i>
+                        <h4>Works</h4>
+                    </li>
+                    <li class="list_item" onclick="scrollToSection('.contact')">
+                        <i class="fa-solid fa-message"></i>
+                        <h4>Contact</h4>
+                    </li>
+                </ul>
+                <!--SOCIALS-->
+                <ul class="socials">
+                    </li>
+                    <li class="social">
+                        <a href="https://github.com/TheoA816"><i class="fa-brands fa-github fa-2x"></i></a>
+                    </li>
+                    <li class="social">
+                        <a href="https://www.linkedin.com/in/theo-ang-069438205/#education"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="main">
+            <div class="container">
+                <!--HELLO WORLD-->
+                <div class="hello-world animate__animated animate__fadeInDown">
+                    <h1>Hello<br>World</h1>
+                </div>
+                <!--ABOUT ME-->
+                <div class="about">
+                    <!--PARA-->
+                    <div class="about-para">
+                        <h1>Hi I'm Theo</h1>
+                        <p>Currently a 1st year studying comsci at UNSW.  I like football (soccer) badminton anime manga youtube j-pop among other things. And programming of course. No art sense exists in any fiber of my being.
+                        </p>
+                        <ul class="personal-info">
+                            <li class="personal-col">
+                                <h4>Nationality</h4>
+                                <h4>DoB</h4>
+                            </li>
+                            <li class="personal-col">
+                                <h4>Indonesian</h4>
+                                <h4>16 Oct 2004</h4>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--DROPDOWN SECTION-->
+                    <div class="courses">
+                        <h1>Courses Taken 
+                            <i id="dropdown-icon" class="fa-solid fa-angle-down" onclick="toggleDropdown()"></i>
+                        </h1>
+                        <ul class="dropdown-list">
+                            <li class="dropdown-col">
+                                <h3>COMP 1511</h3>
+                                <h3>MATH 1131</h3>
+                                <h3>MATH 1081</h3>
+                                <h3>MATH 1231</h3>
+                                <h3>COMP 1521</h3>
+                                <h3>COMP 2521</h3>
+                            </li>
+                            <li class="dropdown-col">
+                                <h3>94</h3>
+                                <h3>95</h3>
+                                <h3>88</h3>
+                                <h3>95</h3>
+                                <h3>89</h3>
+                                <h3>92</h3>
+                            </li>
+                            <li class="dropdown-col">
+                                <h3>21T3</h3>
+                                <h3>21T3</h3>
+                                <h3>21T3</h3>
+                                <h3>22T1</h3>
+                                <h3>22T1</h3>
+                                <h3>22T1</h3>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--RESUME-->
+                <div class="resume">
+                    <iframe src="resume_draft.pdf" width="70%" height="100%"></iframe>
+                </div>
+                <!--WORKS-->
+                <div class="works">
+                    <div class="work">
+                        <a href="https://tedxpasarbaru.com"><img src="img/Screen Shot 2022-06-09 at 15.26.49.png"></a>
+                        <div class="work-text">
+                            <a href="https://tedxpasarbaru.com"><h1>Ted X Pasar Baru</h1></a>
+                            <p>A wordpress website made for a local online TedX event in Jan 2022. Functionality included ticket sales, FAQ, and some other stuff.</p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <div class="work-text">
+                            <a href="#"><h1>This profile page</h1></a>
+                            <p>Made in exclusively HTML and CSS (and a little bit of JS), will work on it more in the future. Apologies for the crappy color scheme it looks good to me though :)</p>
+                        </div>
+                        <a href="#"><img href="#" src="img/Screen Shot 2022-06-09 at 15.36.26.png"></a>
+                    </div>
+                    <div class="work">
+                        <a href="https://youtu.be/sZ30ZKN0egg"><img href="https://youtu.be/sZ30ZKN0egg" src="img/Screen Shot 2022-06-09 at 15.48.20.png"></a>
+                        <div class="work-text">
+                            <a href="https://youtu.be/sZ30ZKN0egg"><h1>DiscoverU Android App</h1></a>
+                            <p>A Hackathon submission from my high school days. Made in java and AndroidStudio (but text and everything mostly hardcoded sadge), it's supposed to be an app that lets students discover universities around the world and what they offer, to help them pick their dream university. I have nothing better to show so .-.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="contact-banner">
+                        <h1>Contact Me Directly</h1>
+                    </div>
+                    <div class="contact-info">
+                        <h3><i class="fa-solid fa-envelope"></i> theo.ang816@gmail.com</h3>
+                        <h3><i class="fa-solid fa-graduation-cap"></i> theo_fabian.ang@student.unsw.edu.au</h3>
+                        <h3><i class="fa-solid fa-phone"></i> -</h3>
+                    </div>
+                </div>
+            </div>        
+        </div>
+    </div>
+</body>
+</html>
